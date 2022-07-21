@@ -8,7 +8,7 @@ def min_max(li):
             li1[j] = min(li[2*j], li[2*j+1])
         else:
             li1[j] = max(li[2*j], li[2*j+1])
-    min_max(li1)
+    return min_max(li1)
 
 
 li = [int(x) for x in input().split()]
