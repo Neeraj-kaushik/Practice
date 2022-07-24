@@ -1,7 +1,6 @@
 def plus_one(li):
     s = [str(i) for i in li]
     m = ''.join(s)
-    print(m)
     k = int(m)
     k = k+1
     li = []
