@@ -1,9 +1,13 @@
 def missing(li):
-    li.sort()
-    for i in range(len(li)-1):
-        if li[i+1]-li[i] > 1:
-            return (li[i+1]+li[i])//2
-    return li[-1]+1
+    N = len(nums)
+    sumN = N * (N+1)
+    sumN = sumN // 2
+
+    csum = 0
+    for i in nums:
+        csum += i
+
+    return sumN - csum
 
 
 li = [int(x) for x in input().split()]
